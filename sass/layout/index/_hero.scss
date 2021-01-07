@@ -1,0 +1,32 @@
+.hero {
+  padding-bottom: 200px;
+  margin: 0px auto;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../img/fon.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero_blok-title .title-hero {
+  display: flex;
+  width: 696px;
+
+  margin: 0px 452px;
+
+  align-items: center;
+  justify-content: center;
+
+  padding-top: 200px;
+  margin-bottom: 30px;
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.363;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+}

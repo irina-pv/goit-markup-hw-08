@@ -1,0 +1,29 @@
+.button {
+  display: block;
+  margin: 0px auto;
+  border-radius: 4px;
+  border: 1px solid var(--accent-color);
+  padding: 10px 32px;
+  min-width: 200px;
+  font-family: var(--main-font);
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  background-color: var(--accent-color);
+  cursor: pointer;
+}
+.container-button {
+  // display: flex;
+  // flex-wrap: wrap;
+  // justify-items: center;
+  margin: 0px 700px;
+}
+
+// .title .button {
+//   justify-content: center;
+// }

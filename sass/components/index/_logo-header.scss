@@ -1,0 +1,17 @@
+.logo-header {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.192;
+  color: var(--main-color-text);
+  letter-spacing: 0.48px;
+  word-spacing: 0.001px;
+
+  & .blue {
+    color: var(--accent-color);
+  }
+}
+
+.logo-header .blue {
+  color: var(--accent-color);
+}

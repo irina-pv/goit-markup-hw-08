@@ -1,0 +1,138 @@
+header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+nav .container {
+  display: flex;
+  align-items: center;
+}
+nav .block-contact {
+  margin-left: 305px;
+}
+.header-adress .block-contact {
+  display: flex;
+  align-items: center;
+
+  & > li:first-child {
+    margin-right: 30px;
+  }
+}
+
+//иконки почты и телефона в хедере
+.adress-tel,
+.adress-mail {
+  display: block;
+  margin-right: 10px;
+  width: 16px;
+  height: 12px;
+  fill: #757575;
+}
+.header-adress .contact-link {
+  display: inline-flex;
+  align-items: center;
+
+  &:hover .adress-mail,
+  &:focus .adress-mail {
+    fill: var(--accent-color);
+  }
+  &:not(:last-child) {
+    margin-right: 31px;
+  }
+}
+
+.adress-tel,
+.adress-mail {
+  transition-property: fill;
+  transition-duration: var(--link-transition-time);
+  transition-timing-function: var(--link--transition-funcsion);
+}
+
+.header-adress .contact-item {
+  display: inline-flex;
+  align-items: center;
+
+  &:hover .adress-tel,
+  &:focus .adress-tel {
+    fill: var(--accent-color);
+  }
+}
+
+//список навигации  в header
+.site-nav {
+  display: flex;
+  margin-left: 90px;
+  align-items: center;
+  & li:nth-child(n + 2) {
+    margin-left: 50px;
+  }
+}
+
+.site-nav .link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.02em;
+  color: var(--main-color-text);
+
+  transition-property: color;
+  transition-duration: var(--link-transition-time);
+  transition-timing-function: var(--link--transition-funcsion);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.site-nav .link.current {
+  color: var(--accent-color);
+  position: relative;
+
+  &::after {
+    position: absolute;
+    display: block;
+    content: '';
+    bottom: -32px;
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+  }
+}
+
+.block-contact a {
+  font-family: var(--accent-color);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.02em;
+  color: #757575;
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.header-adress .contact-link {
+  font-weight: 500;
+}
+.header-adress .contact-item {
+  font-weight: 500;
+}
+
+.header-adress .contact-link {
+  transition-property: color;
+  transition-duration: var(--link-transition-time);
+  transition-timing-function: var(--link--transition-funcsion);
+}
+.header-adress .contact-item {
+  transition-property: color;
+  transition-duration: var(--link-transition-time);
+  transition-timing-function: var(--link--transition-funcsion);
+}
+
+.portfolio-header {
+  border-bottom: 1px solid #ececec;
+}

@@ -1,0 +1,46 @@
+.work {
+  margin-bottom: 94px;
+
+  & h2 {
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.166;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
+}
+
+.work .container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.thumb-work {
+  position: relative;
+
+  & img:last-child {
+    margin-right: 0px;
+  }
+}
+
+.blok-thumb {
+  width: 100%;
+  position: absolute;
+  background-color: rgba(47, 48, 58, 08);
+  bottom: 0px;
+  opacity: 0.8;
+}
+.thumb-work .work-text {
+  padding: 27px 82px 27px 83px;
+
+  font-family: var(--main-font);
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
